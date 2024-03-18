@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+    />
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>GITHUB FINDER</title>
+  </head>
+  <body class="bg-dark text-bg-dark">
+    <!---------------------	NAVBAR START----------------------->
+    <nav class="navbar navbar-dark bg-dark mb-3 text-warning">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/images/logo.png" alt="Bootstrap" width="60" height="60" />
+        </a>
+        <h1>GITHUB FINDER</h1>
+        <button class="btn btn-light" id="theme">Dark Mode</button>
+      </div>
+    </nav>
+    <!---------------------	NAVBAR END------------------------->
+
+    <div class="container">
+      <div id="alert"></div>
+
+      <div class="border p-3">
+        <h1>Search Github username</h1>
+        <p class="lead">Enter a username to access user information.</p>
+        <div class="d-flex gap-3">
+          <input class="form-control" id="search-user" type="text" />
+          <button class="btn btn-warning btn-lg" id="search-button">
+            Search
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="profile"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
